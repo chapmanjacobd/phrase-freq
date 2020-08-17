@@ -1,4 +1,4 @@
-import { authors, countries, notPlaces, prepositions, stopWords } from "./words";
+import { countries, notPlaces, prepositions, stopWords } from "./words";
 
 export function findPlaceNames(text: string): string[] {
   return splitByPhrase(text)
@@ -14,7 +14,7 @@ export function findPlaceNames(text: string): string[] {
       return x.trim();
     })
     .filter((x) => x.match(/^[A-Z]/))
-    .filter((x) => ![...notPlaces, ...authors, ...countries].includes(x))
+    .filter((x) => ![...notPlaces, ...countries].includes(x))
     .filter(Boolean)
     .map((x) => x.trim())
     .filter(Boolean);
