@@ -1,7 +1,7 @@
 # phrase-freq
 Simple ASCII Phrase Detector
 
-## Example
+## Examples
 
 ```sh
 𝄞 bat ~/Documents/research_hn_moviestowatch.txt | ./phrase-freq.ts | head -50
@@ -16,16 +16,6 @@ Simple ASCII Phrase Detector
 4               Men
 4               Koyaanisqatsi
 3               Parasite
-3               Ghibli
-3               Guide
-3               Earth
-3               Children
-3               Samsara
-3               Patton
-3               American
-3               Wargames
-3               Euthanasia
-3               Devs
 2               Tyler Durden
 2               Durden
 2               Palahniuk
@@ -37,6 +27,28 @@ Simple ASCII Phrase Detector
 2               Margin Call
 2               Wally
 2               Spirited Away
+```
+
+```fish
+🌥 bat ~/placedata -ascii/wikivoyage/88\ Temple\ Pilgrimage.txt | ./phrase-freq.ts | head -50
+9               Shikoku
+4               Mount Koya
+4               Kokubunji
+3               Kobo Daishi
+3               Ryozenji
+3               Dainichiji
+2               Xun
+2               Pilgrims
+2               Kochi
+2               Arrows
+2               Kan'onji
+2               Anan Tokushima
+2               Zentsuji
+1               Temple Pilgrimage  The 88
+1               Temple Pilgrimage
+1               Kukai
+1               Esoteric Buddhism
+1               Japanese Shingon
 ```
 
 You should probably use something else for non-ASCII languages :/
